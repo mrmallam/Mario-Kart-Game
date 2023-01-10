@@ -1,9 +1,6 @@
 //  Name: Mohamed Allam
 //  UCID: 30106564
 
-//  Name: Nayera Zaghloul
-//  UCID: 30123228
-
 #include "headerMain.h"
 
 int main()
