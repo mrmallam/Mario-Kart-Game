@@ -1,30 +1,39 @@
-# Mario-Kart-Game
-A Mario Kart game that runs on a Linux machine and takes input from a SNES controller connected to a RPI
+<h1>Mario-Kart-Game</h1>
 
-Resolution used for this game: 1920 * 1080
+<p> A Mario Kart game that runs on a Linux machine and takes input from a SNES controller connected to a Raspberry Pi
+    (RPI).</p>
 
-This game was designed to be run on a Linux machine and to take input from a SNES controller connected to a RPI.
+<h2>Technical Details</h2>
+<ul>
+    <li>Resolution: 1920 * 1080</li>
+    <li>Programming language: C</li>
+    <li>Graphics software: GIMP</li>
+</ul>
 
-Programming language used for the implementation of this game is C.
+<h2>Gameplay</h2>
+<p>The game consists of 4 different challenges with varying difficulties. Mario starts at the initial position and must
+    collect the key in each challenge in order to advance to the next. The game ends when the player successfully
+    collects all 4 keys and a "Game Won!" screen is displayed.</p>
 
-GIMP was used for the images / graphics in this game.
+<h3>Value Packs</h3>
+<p>Each challenge contains 3 value packs:</p>
+<ul>
+    <li>Red heart: Increases the player's lives by one</li>
+    <li>Black heart: decreases the player's lives by one</li>
+    <li>Coin: Increases player's score by 5 points</li>
+</ul>
+<h3>Moving Obstacles</h3>
+<p>Each challenge also contains moving obstacles that decrease the player's remaining lives by one and return Mario to
+    the starting position upon collision.</p>
 
-This game consists of 4 different challenges with different difficulties. 
+<ul>
+    <li>Challenge 1: Moving obstacles are horizontal.</li>
+    <li> Challenge 2: Moving obstacles are vertical.</li>
+    <li> Challenge 3: Moving obstacles are diagonal from top right to bottom left.</li>
+    <li> Challenge 4: Moving obstacles are diagonal from bottom left to top right.</li>
+</ul>
 
-Mario starts at the initial position and moves across the screen to collect the key in order to advance to the next challenge.
-
-Upon finishing all 4 challenges, if the player manages to collect all 4 keys, a “Game Won!” screen will be displayed congratulating the player.
-
-Each of the challenges contain 3 value packs that disappear if taken:
-Red heart: increases the player’s lives by one
-Black heart: decreases the player’s lives by one
-Coin: increases player’s score by 5 points
-
-Each of the challenges contain moving obstacles that decrease the remaining lives by one and returns Mario to the starting position upon colliding with them.
-Challenge 1: Moving obstacles are horizontal.
-Challenge 2: Moving obstacles are vertical.
-Challenge 3: Moving obstacles are diagonal from top right to button left.
-Challenge 4: Moving obstacles are diagonal from button left to top right.
-
-In the event that the player has no remaining lives, or the allowed game time has finished, a “Game Over!” screen will be displayed with an option to restart the game or to terminate.
-
+<h2> Game Over</h2>
+<p>In the event that the player has no remaining lives or the allowed game time has finished, a "Game Over!" screen will
+    be
+    displayed with the option to restart the game or terminate.</p>
